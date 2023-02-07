@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Red Hat Display";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    background: var(--primary-pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+}
+
+.container {
+    width: min(40rem, 90%);
+    margin: 0 auto;
+    background: var(--very-pale-blue);
+    border-radius: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.container > img {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    margin-bottom: 4rem;
+}
+
+h1 + p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 2rem;
+}
+
+.player > div {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+span {
+    text-decoration: underline;
+    color: var(--primary-bright-blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .15s;
+}
+span:hover {
+    color: var(--dark-blue);
+}
+
+button {
+    width: 80%;
+    background-color: var(--primary-bright-blue);
+    border: none;
+    color: var(--primary-pale-blue);
+    font-size: 1.6rem;
+    padding: 1.5rem 0rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--dark-blue);
+}
+
+
+button + p {
+    font-size: 1.6rem;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .15s;
+}
+button + p:hover {
+    color: var(--dark-blue);
+}
+
+@media (max-width: 660px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: 100% 50%;
+    }
+}
+
+@media (max-width: 330px) {
+    .player {
+        flex-direction: column;
+    }
+}
