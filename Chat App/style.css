@@ -43,29 +43,28 @@ body {
 }
 
 .boxes div {
-  height: 100rem;
-  width: min(50rem, 60%);
+  height: 120rem;
+  width: min(60rem, 60%);
   border-radius: 40rem;
   position: absolute;
 }
 
 .radius1 {
-  top: -20rem;
+  top: -40rem;
   left: -10rem;
   background: linear-gradient(180deg, var(--gradient-magenta), var(--gradient-violet));
 }
 .radius2 {
   right: -10rem;
-  bottom: -20rem;
+  bottom: -40rem;
   background: var(--background-app);
 }
 
 /* ------------ CONTENT ---------------- */
 main {
-  width: min(100rem, 80%);
-  /* background: lightblue; */
+  width: min(90rem, 80%);
   display: flex;
-  gap: 10rem;
+  gap: 15rem;
   justify-content: center;
   align-items: center;
 }
@@ -76,13 +75,12 @@ main {
 /* ------------ SMARTPHONE ---------------- */
 
 .phone {
-  height: 40rem;
   width: 30rem;
-  background: blue;
+  background: var(--background-app);
   position: relative;
-  border: 1rem solid white;
-  /* overflow: hidden; */
-  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.555);
+  outline: 1rem solid white;
+  box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 0.555);
+  border-radius: 3rem;
 }
 
 .phone::after {
@@ -98,6 +96,9 @@ main {
   border-bottom-right-radius: 1.5rem;
 }
 
+/* ------------ PROFILE ---------------- */
+
+
 .profile,
 .profile-name {
   display: flex;
@@ -105,20 +106,167 @@ main {
 }
 .profile {
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   background: linear-gradient(-90deg, var(--gradient-magenta), var(--gradient-violet));
+  padding: 3rem 2rem 1rem;
+  border-radius: 1rem
 }
 .profile-name {
   gap: 1rem;
 }
 
 .picture {
-  width: 5rem;
+  width: 3rem;
+  border-radius: 2rem;
+  outline: 1px solid var(--background-white);
 }
 
 .arrow {
-  width: 2rem;
+  width: 1rem;
 }
 .toggle {
-  width: 1rem;
+  width: .5rem;
+}
+
+.profile-name h3 {
+  color: var(--background-white);
+  font-size: 1.4rem;
+}
+.profile-name h3 + span {
+  color: var(--sub-heading);
+}
+
+/* ------------ CONVERSATION ---------------- */
+
+.conversation {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-photos img {
+  width: 5rem;
+  border-radius: 1rem;
+  margin-left: .5rem;
+}
+
+.her p {
+  color: blue;
+  width: 68%;
+  font-size: 1.2rem;
+  background: var(--placeholder);
+  color: var(--chat-left);
+  padding: 1rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: .4rem;
+  margin: 1rem 0rem;
+}
+
+.him {
+  text-align: end;
+  width: 68%;
+  align-self: end;
+  margin: 1rem 0rem;
+}
+
+.him p:nth-child(2) {
+  text-align: start;
+}
+
+.him p {
+  font-size: 1.2rem;
+  background: var(--background-white);
+  color: var(--chat-right);
+  padding: 1rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: .5rem;
+  display: inline-block;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.check {
+  display: flex;
+  background: linear-gradient(to right, var(--gradient-magenta), var(--gradient-violet));
+  width: 68%;
+  border-radius: 1rem;
+  border-bottom-left-radius: .5rem;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.time {
+  display: flex;
+  align-items: center;
+  color: var(--background-white);
+  gap: 1rem;
+}
+
+h4 {
+  color: var(--background-white);
+  font-size: 1.4rem;
+}
+
+.checked {
+  border: 2px solid var(--background-radio-button);
+  border-radius: 5rem;
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+/* ------------ TEXT BOX ---------------- */
+
+.new-message {
+  display: flex;
+  background: var(--background-white);
+  width: 90%;
+  margin: 0 auto 1rem;
+  padding: .5rem 1rem .5rem 2rem;
+  border-radius: 2rem;
+}
+
+.new-message input {
+  border: none;
+  flex: 1;
+}
+
+.new-message input:focus {
+  border: none;
+}
+
+.new {
+  background: var(--background-button);
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+}
+
+.new-message img {
+  width: .8rem;
+  display: block;
+}
+
+
+/* ------------ DESCRIPTION ---------------- */
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.text p {
+  font-size: 1.6rem;
+  color: var(--paragraph);
+  line-height: 2.5rem;
+}
+
+/* ------------ MEDIA QUERIES ---------------- */
+
+@media (max-width: 770px) {
+  main {
+    flex-direction: column;
+  }
 }
