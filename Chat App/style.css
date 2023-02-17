@@ -32,6 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 .boxes {
@@ -267,6 +268,12 @@ h2 {
 
 @media (max-width: 770px) {
   main {
-    flex-direction: column;
+    display: inline-block;
+  }
+  .phone {
+    margin: 0 auto 3rem;
+  }
+  .text {
+    text-align: center;
   }
 }
