@@ -55,6 +55,17 @@
   }
 }
 
+@media (max-width: 950px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0;
+  }
+  .info,
+  .career {
+    margin-bottom: 5rem;
+  }
+}
+
 @media (max-width: 760px) {
   .last-block h1 {
     font-size: 3rem;
