@@ -55,12 +55,28 @@
   }
 }
 
+@media (max-width: 760px) {
+  .last-block h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 3rem;
   }
   .first-section p {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .last-block h1 {
+    font-size: 2rem;
+  }
+
+  .last-block button {
+    font-size: 1rem;
   }
 }
 
