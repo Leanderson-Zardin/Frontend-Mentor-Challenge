@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+h2 {
+  font-family: 'Raleway';
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 6rem;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 5rem 6rem 5rem;
+}
+.navbar{
+  width: 25%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+  font-family: 'Raleway';
+  color: black;
+  font-size: 1.8rem;
+}
+.navbar ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* MAIN */
+.first-section, .second-section, .third-section, .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FIRST SECTION */
+.first-section {
+  height: 600px;
+  padding: 0rem 6rem 5rem;
+  margin-bottom: 10rem;
+}
+.acontent {
+  width: 75rem;
+}
+.email {
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.email::placeholder {
+  color: rgb(191, 191, 191);
+}
+.started-button {
+  border: none;
+  background-color: rgb(48, 101, 248);
+  padding: 1.2rem 4.5rem;
+  color: rgb(236, 226, 226);
+  font-weight: 700;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+}
+
+/* PICTURES */
+.apicture, .bpicture {
+  width: 50%;
+}
+.apicture img, .bpicture img {
+  width: 100%;
+}
+
+/* SECOND SECTION  */
+.second-section {
+  position: relative;
+  height: 60rem;
+}
+.container {
+  padding: 5rem 6rem;
+}
+.bcontent {
+  width: 75rem;
+}
+.background {
+  position: absolute;
+  height: 130%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.bcontent a {
+  font-size: 1.8rem;
+  color: rgb(60, 159, 143);
+}
+.link {
+  border-bottom: 2px solid rgb(60, 159, 143);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
+}
+.card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+  display: inline-block;
+  padding: 3.5rem 3rem;
+  border-radius: 1.1rem;
+}
+.card img {
+  width: 2.2rem;
+}
+.card p {
+  line-height: 3rem;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+}
+.perfil img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+.identify {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.name {
+  margin: 0;
+  font-weight: bold;
+  height: 2.4rem;
+}
+.title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+/* THIRD SECTION */
+.third-section {
+  padding: 9rem 6rem;
+  padding-right: 10rem;
+  margin-top: 7rem;
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+}
+.second-email, .get-started {
+  display: block;
+}
+.second-email {
+  width: 50rem;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin-bottom: 1.5rem;
+}
+.get-started {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.068);
+  padding: 1.2rem 3rem;
+}
+/* FOOTER */
+footer {
+  padding: 8rem 6rem 5rem;
+  padding-right: 25rem;
+  background-color: rgb(7, 4, 57);
+  color: white;
+}
+.dcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-footer {
+  margin-bottom: 2rem;
+}
+.fylo-logo {
+  width: 20rem;
+}
+.phone p, .mail p {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.a-more a, .b-more a {
+  color: white;
+  font-size: 1.5rem;
+}
+.a-more ul, .b-more ul {
+  line-height: 3rem;
+}
