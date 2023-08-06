@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  font-size: 10px;
+  font-family: "montserrat";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --verde-principal: hsl(158, 36%, 37%);
+  --branco-acinzentado: hsl(30, 38%, 92%);
+  --azul-escuro: hsl(212, 21%, 14%);
+  --azul-claro: hsl(228, 12%, 48%);
+  --branco: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  place-items: center;
+  background-color: var(--branco-acinzentado);
+}
+
+.container {
+  margin: 0px auto;
+  display: flex;
+  background: var(--branco);
+  border-radius: 1rem;
+}
+
+.container figure {
+  width: 30rem;
+}
+
+.container figure img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.content {
+  padding: 3rem;
+  width: 30rem;
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .5rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: var(--azul-claro);
+}
+
+h1 {
+  font-family: "fraunces";
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--azul-claro);
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+}
+
+.price h2 {
+  font-size: 1.8rem;
+  color: var(--verde-principal);
+}
