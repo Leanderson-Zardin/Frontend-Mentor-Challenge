@@ -22,5 +22,24 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Hanken Grotesk"
+  font-family: "Hanken Grotesk";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 50rem;
+  width: 100rem;
+  background: var(--dark-gray-blue);
+  border-radius: 5rem;
+}
+
+section .results {
+  background: var(--gradient-royal-blue-background);
 }
