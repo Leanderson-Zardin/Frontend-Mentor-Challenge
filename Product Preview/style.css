@@ -32,25 +32,26 @@ body {
 }
 
 .container figure {
-  width: 30rem;
+  width: 33rem;
 }
 
 .container figure img {
   width: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  display: block;
 }
 
 .content {
-  padding: 3rem;
-  width: 30rem;
+  padding: 3rem 3rem;
+  width: 33rem;
 }
 
 span {
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: block;
   color: var(--azul-claro);
 }
@@ -58,20 +59,48 @@ span {
 h1 {
   font-family: "fraunces";
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  color: var(--azul-escuro);
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--azul-claro);
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .price {
   display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 .price h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: var(--verde-principal);
+  font-family: "Fraunces";
+}
+
+.price s {
+  font-size: 1.4rem;
+  color: var(--azul-claro);
+}
+
+.button {
+  background-color: var(--verde-principal);
+  display: flex;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.button p {
+  color: var(--branco);
+  font-weight: bold;
+  margin-left: 1rem;
+  margin: 0 0 0 1rem;
 }
