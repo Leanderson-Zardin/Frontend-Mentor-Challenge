@@ -31,11 +31,11 @@ body {
   border-radius: 1rem;
 }
 
-.container figure {
+.container picture {
   width: 33rem;
 }
 
-.container figure img {
+.container picture img {
   width: 100%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -103,4 +103,24 @@ p {
   font-weight: bold;
   margin-left: 1rem;
   margin: 0 0 0 1rem;
+}
+
+@media (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    width: min(42rem, 90%);
+  }
+
+  .container picture img {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+  }
+
+  .container picture {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
 }
